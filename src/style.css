@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root { /*Substitui o html, é mais atual. Aqui estão as infos da RAIZ do site*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+ul {
+    display: flex; /*links lado a lado*/
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-right:0.625rem;
+}
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    display:grid;/*Grid*/
+    grid-template-columns: 1fr 9fr; /*Uma fração e 9 frações*/
+    padding: 0 1rem;
+    position: fixed;
+    top:0;
+    left:0;    
+    width:100vw;
+}
+
+.navbar__links {
+    justify-self: end;
+}
+
+.navbar__links a {
+    color:#fff;
+    text-decoration:none;
+}
